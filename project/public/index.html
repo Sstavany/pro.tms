@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم البوت</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>لوحة تحكم بوت تيليجرام</h1>
+        <form id="commandForm">
+            <label for="command">أدخل الأمر:</label>
+            <input type="text" id="command" name="command" placeholder="مثال: /add 12345678 3" required>
+            <button type="submit">إرسال</button>
+        </form>
+        <div id="response"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
