@@ -1,14 +1,8 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "api/api_handler.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "public/**/*",
-      "use": "@vercel/static"
-    }
+    { "src": "api/api_handler.py", "use": "@vercel/python" },
+    { "src": "public/**/*", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "api/api_handler.py" },
